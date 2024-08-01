@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            height: 100vh; /* Para asegurar que los elementos se centren verticalmente dentro de toda la ventana */
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 48%; /* Ajuste para que ambas columnas ocupen el espacio deseado */
+        }
+        .item {
+            border: 1px solid black;
+            margin: 5px;
+            padding: 10px;
+            width: 100px; /* Puedes ajustar el ancho según tus necesidades */
+            text-align: center; /* Para centrar el texto dentro de los elementos */
+        }
+    </style>
+    <title>Distribución de Contenedores</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="column">
+            <div class="item">Izquierda 1</div>
+            <div class="item">Izquierda 2</div>
+        </div>
+        <div class="column">
+            <div class="item">Derecha 1</div>
+            <div class="item">Derecha 2</div>
+        </div>
+    </div>
+</body>
+</html>

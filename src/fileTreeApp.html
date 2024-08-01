@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de Archivos desde Google Drive by AlvaroDLC</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../src/css.html"> -->
+
+    <?!= HtmlService.createHtmlOutputFromFile("css").getContent(); ?>
+     
+</head>
+
+<body>
+  <div class="Heading">
+    <h1>Estructura de Archivos desde Google Drive</h1>
+  </div>
+
+
+
+  <div class="mainContainer">
+    
+    <div class="column">
+      <div class="item-center">
+        <input type="text" id="folderId" placeholder="ID de carpeta a ser Evaluada">
+        <br>
+        <button type="button" onclick="processData()">Evaluar Carpeta</button>
+        <br>
+        <br>
+        <button type="button" onclick="openFolder()">Abrir Carpeta</button>
+
+
+        <p id="Developer">Develop By AlvaroDLC</p>
+        <p id="text"> Contact Info: </p>
+        <a href="https://alvarodlc.com/" target="_blank">alvarodlc.com</a><br>
+
+        <a href="https://wa.me/+59164135447/" target="_blank">Whatsapp Message</a><br>
+
+        <p id="result" class="higligth"></p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="item-left">
+        <p dir='ltr' class='paragraph'>Esta App nos ayuda a extraer la estructura de Carpetas y Archivos de una ubicacion dentro de nuestro Google Drive .</p>
+        <p dir='ltr' class='paragraph'><span class='span-Heading'>Como Funciona:</span></p>
+        <ol class='listItem'>
+          <li dir='ltr' class='listItem'>
+            <p dir='ltr' class='paragraph'>Copia el ID de la carpeta que deseas Evaluar</p>
+          </li>
+          <li dir='ltr' class='listItem'>
+            <p dir='ltr' class='paragraph'>Pega el ID en el recuadro de Texto</p>
+          </li>
+          <li dir='ltr' class='listItem'>
+            <p dir='ltr' class='paragraph'>Dale al boton "Evaluar Carpeta"</p>
+          </li>
+          <li dir='ltr' class='listItem'>
+            <p dir='ltr' class='paragraph'>Otorga permisos para el la App pueda Extraer los datos</p>
+          </li>
+          <li dir='ltr' class='listItem'>
+            <p dir='ltr' class='paragraph'>Al finalzar aparecera un mensaje indicando que se ha completado el proceso de evaluación.</p>
+          </li>
+          
+        </ol>
+        <p dir='ltr' class='paragraph'><span class='span-Heading'>Resultados:</span></p>
+        
+        <ul class='unorderedList'>
+          <li dir='ltr' class='listItem'>
+            <p dir='ltr' class='paragraph'>Ve dentro la carpeta evaluada con el boton "Abrir Carpeta" o atravez de "Google Drive".</p>
+          </li>
+          <li dir='ltr' class='listItem'>
+            <p dir='ltr' class='paragraph'>Ahi dentro encontraras un archivo de nombre FileTree_DDMMYY-HHMM.txt.</p>
+          </li>
+          <li dir='ltr' class='listItem'>
+            <p dir='ltr' class='paragraph'>En el cual se encuentran listados los archivos con sus respetivas carpeta y tamaño de archivo.</p>
+          </li>
+          <li dir='ltr' class='listItem'>
+            <p dir='ltr' class='paragraph'>Donde DDMMYY-HHMM (DiaMesAño-HoraMinuto) es el codigo generado por cada ejecucion.</p>
+          </li>
+        </ul>
+        <p dir='ltr' class='paragraph'>Nota: Dependiendo de la cantidad de Archivos y carpetas existentes podria tardara un poco.</p>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <script>
+    function processData() {
+      var folderId = document.getElementById('folderId').value;
+      
+      google.script.run.withSuccessHandler(updateResult).getFileTreeWithSize(folderId);
+    }
+    function updateResult() {
+      document.getElementById("result").textContent = 'Completado';   
+    }
+
+    function openFolder() {
+      var folderId = document.getElementById('folderId').value;
+      folderLink = 'https://drive.google.com/drive/folders/' + folderId
+      window.open(folderLink);
+
+      // <button type="button" onclick="processData()">Evaluar Carpeta</button>
+    }
+    
+
+
+
+  </script>    
+        
+        
+</body>
+<footer>
+  <p dir='ltr' class='paragraph'>Todos los Derechos Reservados - Alvaro DLC 2024 - La Paz Bolivia</p>
+</footer>
+
+
+</html>
