@@ -13,17 +13,17 @@ Files
 
 FUNCTIONS
 
-* getFileTreeWithSize(folderId)
-    
+1. getFileTreeWithSize(folderId)
+
     Get data to Eval - Folders
-* getFolderTreeWithSize(folder, indent, fileTree)
+2. getFolderTreeWithSize(folder, indent, fileTree)
     
     Get data to Eval - Files and Folders
-* formatFileSize(size)
+3. formatFileSize(size)
     
     Set Fotmat to file Size | Ex. KB, MB, etc
-* currentDate()
+4.  currentDate()
     
     Set current timestamp. 
-    Uses: in Log and File Name 
+    Uses: Log and File Name 
 
