@@ -9,6 +9,7 @@
 
  1. fileTreeApp.html = Interface
  2. fileTreeScript.js = Functions
+ 3. .clasp.json | appsscript.json = "clasp" config files
 
  FUNCTIONS
 
