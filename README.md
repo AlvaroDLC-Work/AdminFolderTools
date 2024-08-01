@@ -9,6 +9,7 @@ Files
 
 1. fileTreeApp.html = Web Interface in html
 2. css.html = Style Sheet for Interface |
+    
     (css.html not css.css because Google Script doesn't allow *.css files only html and js/gs Files)
 3. fileTreeScript.js = Functions
 4. .clasp.json | appsscript.json = "clasp" config files
