@@ -1,6 +1,8 @@
 # AdminFolderTools
  Get folde structure include file size from a Google Drive Folder
 
- Data folder = Result Files
+ Folders
+ 
+ data = Result Files
  
  src = Source Code
