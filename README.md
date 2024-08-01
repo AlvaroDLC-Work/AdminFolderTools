@@ -3,19 +3,22 @@
 
  Folders
 
- src = Source Code
-    fileTreeApp.html = Interface
-    fileTreeScript.js = Functions
-    
-    FUNCTIONS                    
-    
-    * getFileTreeWithSize(folderId)
-        Get data to Eval - Folders
-    * getFolderTreeWithSize(folder, indent, fileTree)
-        Get data to Eval - Files and Folders
-    * formatFileSize(size)
-        Set Fotmat to file Size | Ex. KB, MB, etc
-    * currentDate()
-        Set current timestamp. 
-        Uses: in Log and File Name 
-    
+ 1. src = Source Code
+
+ Files
+
+ 1. fileTreeApp.html = Interface
+ 2. fileTreeScript.js = Functions
+
+ FUNCTIONS
+
+ * getFileTreeWithSize(folderId)
+     Get data to Eval - Folders
+ * getFolderTreeWithSize(folder, indent, fileTree)
+     Get data to Eval - Files and Folders
+ * formatFileSize(size)
+     Set Fotmat to file Size | Ex. KB, MB, etc
+ * currentDate()
+     Set current timestamp. 
+     Uses: in Log and File Name 
+
