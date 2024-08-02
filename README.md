@@ -30,3 +30,20 @@ FUNCTIONS
     Set current timestamp. 
     Uses: Log and File Name 
 
+SPANISH
+
+Esta App nos ayuda a extraer la estructura de Carpetas y Archivos de una ubicacion dentro de nuestro Google Drive .
+
+Pasos a seguir:
+Copia el ID de la carpeta que deseas Evaluar
+Pega el ID en el recuadro de Texto
+Dale al boton "Evaluar Carpeta"
+Dependiendo de la cantidad de rchivos y carpetas existentes tardara un poco.
+Al finalzar aparecera un mensaje indicando que se ha completado el proceso de evaluación.
+Resultados:
+Ve dentro l a carpeta que evaluate con el boton "Abrir Carpeta" o atravez de "Google Drive". 
+Ahi dentro encontraras un archivo de nombre FileTree_DDMMYY-HHMM.txt. 
+En el cual se encuentran listados los archivos con sus respetivas carpeta y tamaño de archivo. 
+Donde DDMMYY-HHMM (DiaMesAño-HoraMinuto) es el codigo generado por cada ejecucion. 
+
+Todos los Derechos Reservados - Alvaro DLC 2024 - La Paz Bolivia
